@@ -1,13 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* NAV BAR CSS */
 .navbar {
 display: flex;
 justify-content: space-around;
+align-items: center;
 background-color: #1f2937;
 color: #f9faf8;
+height: 70px;
 }
 
 nav ul{
@@ -19,6 +28,7 @@ nav ul li {
     cursor: pointer;
     font-size: 18px;
     padding: 10px;
+    
 
 }
 
@@ -32,16 +42,40 @@ nav ul li:hover {
     background-color: blue;
 }
 
-}
-.logo {
- 
-}
-.logotext{
 
+/* HERO SECTION */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    gap: 45px;
+}
+.hero-img {
+max-width: 550px;
+height: auto;
+padding-bottom: 80px;
+}
+.content-left {
+width: 30%;
+color: #F9FAF8;
+}
+
+.content-left p {
+    padding: 10px 0px 0px 0px;
+    color: #F9FAF8;
+    }
+.content-right {
 
 }
-.links{
-
+button {
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border-radius: 4px;
+    padding: 5px 20px 5px 20px;
+    margin: 30px 0px;
+    border: none;
 }
 
 .start  {
@@ -49,6 +83,7 @@ nav ul li:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .hero-main-text {
@@ -71,12 +106,21 @@ nav ul li:hover {
 
 .quote-area p {
     font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
     
+}
+
+.quote {
+  padding: 20px 50px 20px 50px; 
 }
 
 .subtext {
     display: flex;
     justify-content: center;
+    
 }
 
 .subtext p {
@@ -93,15 +137,10 @@ nav ul li:hover {
 .start img { 
 height: 250px;
 padding: 50px;
+
 }
 
-button {
-    background-color: #3882f6;
-    color: #F9FAF8;
-    border-radius: 4px;
-    padding: 5px 20px 5px 20px;
-    border: none;
-}
+
 
 .random-info {
     display: flex;
@@ -110,10 +149,13 @@ button {
 .random-info img{
     height: 200px;
     width: 200px;
-    padding: 20px;
+    margin: 20px;
+    border: 4px solid #3882f6;
+    border-radius: 4px;
     
 }
 .ran-title h2 {
+    font-size: 36px;
     display: flex;
     justify-content: center;
     padding: 30px;
